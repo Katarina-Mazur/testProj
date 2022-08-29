@@ -1,0 +1,324 @@
+body{
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height:100px;
+	background: #000;
+	padding: 30px;
+}
+.col-md-3{
+	color: #fff;
+}
+.col-md-6{
+	color: #fff;
+}
+form input{
+	max-width: 600px;
+	width: 100%;
+	height: 40px;
+	border-radius: 30px;
+	transition: transform 0.35s;
+ }
+ form input::placeholder{
+    background: url(search.svg) no-repeat;
+	background-position: right; 
+    padding-left: 10px;
+}
+form input:hover{
+	transform: scale(1.1);
+}
+svg{
+	color: #fff;
+}
+.logo{
+	text-decoration: none;
+	color: #fff;
+	font-size:17px;
+	transition: transform 0.35s;
+}
+.logo:hover{
+	transform: scale(1.1);
+	text-decoration: none;
+	color: #fff;
+ }
+ .dropdown{
+	list-style-type: none;
+	transition: transform 0.35s;
+ }
+ .dropdown li .svg :hover{
+	transform: scale(1.1);
+ }
+
+.dropdown-menu_header{
+    position: relative;
+	left:38px;
+	top:30px;
+	width: 270px;
+	height: 400px;
+	overflow: auto;
+	list-style-type: none;
+	color:#fff;
+	background: #000;
+	text-align: left;
+	display: none;
+}
+.dropdown :hover .dropdown-menu_header{
+	display:block;
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	font-size:14px;
+	padding-bottom: 15px;
+}
+ul li a:hover{
+	color:#fff;
+	font-size: 15px;
+}
+.sub-menu_header{
+	list-style-type: none;
+	display: none;
+}
+.dropdown-menu_header :hover .sub-menu_header{
+	display: block;
+	
+}
+input[type="checkbox"] {
+	position: relative;
+	width: 20px;
+	height: 10px;
+	-webkit-appearance: none;
+	outline: none;
+	background: #636363;
+	border-radius: 20px;
+	transition: .5s;
+
+ }
+input:checked[type="checkbox"]{
+	background: #3a5070;
+ }
+ input[type="checkbox"]::before{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	transform: scale(1.1);
+	border-radius: 50%;
+	background: #d1d1d1;
+	left:0;
+	transition: .5s;
+ }
+ input:checked[type="checkbox"]::before{
+	background: #5386d4;
+	left: 10px;
+ }
+ /*main*/
+ .menu-main{
+	min-height: 700px;
+	height: 100vh;
+	background-color: aquamarine;
+ }
+ .slider{
+	min-height: 700px;
+	height: 100vh;
+ }
+ /*menu*/
+ .menu-main {
+	text-align: center;
+	}
+	.menu-main a {
+	text-decoration: none;
+	display: block;
+	transition: .5s linear;
+	}
+	.menu-main ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	.topmenu > li {
+	display: block;
+	/*Если вместо block задать inline-block,
+	меню будет горизонтальным*/
+	position: relative;
+	top:20px;
+	width: 200px;
+	margin-bottom: 45px;
+	}
+	.topmenu > li > button {
+	background: rgb(202, 212, 220);
+	padding: 10px 30px;
+	margin-right: 20px;
+	width: 150px;
+	font-size: 14px;
+	border-radius: 17px;
+	box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .1);
+	transition: transform 0.25s;
+	}
+	
+	.topmenu > li > button:hover{
+		transform: scale(1.03);
+	}
+	.submenu1 {
+	position: absolute;
+	top: 44px;
+	z-index: 5;
+	width: 240px;
+	visibility: hidden;
+	opacity: 0.3;
+	transform: translateY(10px);
+	transition: .5s ease-in-out;
+	}
+	.submenu1 li {
+	position: relative;
+	border: 1px solid #999;
+	margin:2px;
+	}
+	.submenu1 a {
+	background: white;
+	color: #1c1c1c;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	}
+	.submenu1 .submenu1 {
+	position: absolute;
+	top: 20px;
+	left: 235px;
+	}
+	.menu-main li:hover > .submenu1 {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0px);
+	}
+	/*Карта дня*/
+	.nav {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		justify-content: space-around;
+  
+	  }
+	  .menu-cart{
+		margin-top: 20px;
+		width: 170px;
+		height: 40px;
+		color: #FFF;
+		font-weight: bold;
+		font-family: 'Roboto Condensed', Тahoma, sans-serif;
+		background: rgb(201, 249, 247);
+		cursor: pointer;
+		border: 3px solid rgb(160, 240, 238);
+		border-radius: 7px;
+		outline: 1px solid;
+		outline-color: rgb(160, 240, 238);
+		outline-offset: 0px;
+		text-shadow: none;
+		transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1); 
+	  }
+	  .menu-cart:hover,
+	  .menu-cart:active,
+	  .menu-cart:focus {
+		box-shadow: inset 0 0 20px rgb(9, 176, 253);
+		outline-color: rgba(255, 255, 255, 0);
+		outline-offset: 15px;
+		color: #FFF;
+	  }
+  
+	  a{
+		text-decoration: none;
+		font-size: 12px;
+		text-align: center;
+		color: #000;
+		position: relative;
+	
+	  }
+	  a::before {
+		content: '';
+		position: absolute;
+		left: 0; bottom: -5px;
+		width: 0;
+		height: 1.5px;
+		background-color: #000;
+	  }
+  
+	  a:hover:before {
+		width: 100%;
+	  }
+  
+	  a::before {
+		transition: width 0.35s;
+	  }
+  /*подсказки*/
+	  *[attr] {
+		position: relative;
+	  }
+  
+	  *[attr]:before {
+		pointer-events: none;
+		content: attr(attr);
+		position: absolute;
+		z-index: 1;
+		opacity: 0;
+		visibility: hidden;
+	  }
+  
+	  *[attr]:hover:before {
+		opacity: 1;
+		visibility: visible;
+	  }
+  
+	  *[attr]:before {
+		margin-top: 15px;
+		font-size: 10px;
+		color: #000;
+		border-radius: 7px;
+		background-color: #f1f1f1;
+		padding: 5px 10px;
+	  }
+  
+	  *[attr]:before, *[attr]:after {
+		width: 150px;
+		top: 100%;
+		left: 50%;
+		transition: all .15s ease;
+		transform: translate(-50%, 15px);
+	  }
+  
+	  *[attr]:hover:before, *[attr]:hover:after {
+		transition: all .15s ease;
+		transform: translate(-50%, 0);
+	  }
+  
+	  *[attr]:hover:after {
+		opacity: 1;
+		visibility: visible;
+	  }
+	  /*текст контент*/
+	  .content{
+		height: 700px;
+		overflow: auto;
+	  }
+	  
+	 .content .text-info{
+		font-size: 15px;
+		margin-top: 20px;
+		text-align: left;
+		color: #000;/*не применяется стиль, наследование соблюдено*/
+	  }
+	  .slider img{
+		height: 600px;
+	  }
+	  .carousel-control-next,
+	  .carousel-control-prev{
+		margin-top: 550px;
+	  }
+	  
+ @media screen and (max-width: 575px){
+	header{
+		height:130px
+	}
+  }
