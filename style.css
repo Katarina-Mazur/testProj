@@ -65,6 +65,7 @@ svg{
 }
 .dropdown :hover .dropdown-menu_header{
 	display:block;
+	z-index: 1;
 }
 ul li a{
 	text-decoration: none;
