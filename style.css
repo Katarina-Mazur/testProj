@@ -1,8 +1,7 @@
 body{
 	margin: 0 auto;
 }
-body.dark-theme .content{
-	color: #eee;
+body.dark-theme{
 	background: #000;
   }
 header{
