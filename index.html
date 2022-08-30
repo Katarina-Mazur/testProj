@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<link rel='stylesheet' href='style.css'>
 </head> 
-<body>
+<body class="light-theme">
     <header class="container-fluid text-center">
 			<div class="row">
 				<a href="#" class="col-sm-3 logo">Logo</a>
@@ -97,7 +97,7 @@
 		<div class="row">
 			<div class="col-sm-2 menu-main">
 				<ul class="topmenu">
-					<li><button>Cart-Day</button>
+					<li><button class="hider" id="hider" onclick="openbox('box1'); return false">Cart-Day</button>
 				  </li>
 				  <li><button>МЕНЮ</button>
 					 <ul class="submenu1">
@@ -143,7 +143,7 @@
 				
 			</div>
 			<div class="col-sm-7 content">
-				<div class="nav">
+				<div class="nav block-of-text" id="box1" style="display: none;">
 					<button class="menu-cart" attr="Энергетика дня способствует свершению великих дел. Сегодня у Вас хватает ресурсов и возможностей, чтобы добиться чего угодно.">
 					  <a href="#">Характеристика дня</a>
 					</button>
@@ -160,7 +160,7 @@
 						<a href="#">Совет, предостережение</a>
 					</button>
 					</div>
-					<p class="text-info">Lorem Ipsum is simply dummy text of the printing and 
+					<p class="text-info block-of-text" id="box1" style="display: block;">Lorem Ipsum is simply dummy text of the printing and 
 						typesetting industry. Lorem Ipsum has been the industry's standard dummy
 						 text ever since the 1500s, when an unknown printer took a galley of type 
 						 and scrambled it to make a type specimen book. It has survived not only five 
@@ -200,7 +200,7 @@
 						  with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
 						  publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
-			<div class="col-sm-3 slider">
+			<div class="col-sm-3 slider" padding="0" margin="0">
 				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 					<div class="carousel-indicators">
 					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -210,7 +210,7 @@
 					</div>
 					<div class="carousel-inner">
 					  <div class="carousel-item active">
-						<img src="star.jpeg" class="d-block w-100" alt="...">
+						<img src="star.jpeg" class="d-block w-100" alt="..." >
 					  </div>
 					  <div class="carousel-item active">
 						<img src="img1.jpeg" class="d-block w-100" alt="...">
@@ -235,5 +235,25 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		const btn = document.querySelector('.btn-toggle');
+
+btn.addEventListener('click', function() {
+
+  document.body.classList.toggle('dark-theme');  
+});
+
+		function openbox(id) {
+  var all = document.querySelectorAll(".block-of-text");
+  for (var i = 0; i < all.length; i++) {
+    if (all[i].id == id) {
+      all[i].style.display = (all[i].style.display == 'none')? 'block' : 'none';
+    } else {
+      all[i].style.display = 'none';
+    }
+  }
+}
+	</script>
 </body>
 </html>

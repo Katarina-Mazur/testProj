@@ -1,6 +1,10 @@
 body{
 	margin: 0 auto;
 }
+body.dark-theme .content{
+	color: #eee;
+	background: #000;
+  }
 header{
 	width: 100%;
 	height:100px;
@@ -67,13 +71,13 @@ svg{
 	display:block;
 	z-index: 1;
 }
-ul li a{
+.dropdown ul li a{
 	text-decoration: none;
 	color:#fff;
 	font-size:14px;
 	padding-bottom: 15px;
 }
-ul li a:hover{
+.dropdown ul li a:hover{
 	color:#fff;
 	font-size: 15px;
 }
@@ -167,9 +171,6 @@ input:checked[type="checkbox"]{
 	z-index: 5;
 	width: 240px;
 	visibility: hidden;
-	opacity: 0.3;
-	transform: translateY(10px);
-	transition: .5s ease-in-out;
 	}
 	.submenu1 li {
 	position: relative;
@@ -191,8 +192,6 @@ input:checked[type="checkbox"]{
 	}
 	.menu-main li:hover > .submenu1 {
 	visibility: visible;
-	opacity: 1;
-	transform: translateY(0px);
 	}
 	/*Карта дня*/
 	.nav {
@@ -305,13 +304,17 @@ input:checked[type="checkbox"]{
 	  }
 	  
 	 .content .text-info{
+		display: block;
 		font-size: 15px;
 		margin-top: 20px;
 		text-align: left;
 		color: #000;/*не применяется стиль, наследование соблюдено*/
 	  }
+	 
+	  /*Слайдер*/
 	  .slider img{
 		height: 600px;
+		width: 400px;
 	  }
 	  .carousel-control-next,
 	  .carousel-control-prev{
