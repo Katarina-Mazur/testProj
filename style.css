@@ -254,7 +254,7 @@ input:checked[type="checkbox"]{
 	  a::before {
 		transition: width 0.35s;
 	  }
-  /*подсказки*/
+  /*подсказки
 	  *[attr] {
 		position: relative;
 	  }
@@ -299,6 +299,7 @@ input:checked[type="checkbox"]{
 		opacity: 1;
 		visibility: visible;
 	  }
+	  */
 	  /*текст контент*/
 	  .content{
 		height: 700px;
