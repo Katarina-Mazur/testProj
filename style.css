@@ -1,6 +1,8 @@
 body{
 	margin: 0 auto;
+	color: rgba(255, 255, 255, 0.465);
 }
+
 body.dark-theme{
 	background: #000;
   }
@@ -133,173 +135,65 @@ input:checked[type="checkbox"]{
 	height: 100vh;
  }
  /*menu*/
- .menu-main {
-	text-align: center;
+	ul li{
+		list-style-type: none;
 	}
-	.menu-main a {
-	text-decoration: none;
-	display: block;
-	transition: .5s linear;
-	}
-	.menu-main ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	}
-	.topmenu > li {
-	display: block;
-	/*Если вместо block задать inline-block,
-	меню будет горизонтальным*/
-	position: relative;
-	top:20px;
-	max-width: 200px;
-	width:100%;
-	margin-bottom: 45px;
-	}
-	.topmenu > li > button {
+	.btn{
+		position: relative;
+		left:-20px;
+		text-align: center;
 	background: rgb(202, 212, 220);
 	padding: 10px 30px;
-	margin-right: 20px;
+	margin: 10px 0px;
 	max-width: 150px;
 	width: 100%;
-	font-size: 14px;
+	font-size: 12px;
 	border-radius: 17px;
 	box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .1);
 	transition: transform 0.25s;
 	}
-	
-	.topmenu > li > button:hover{
+	.btn:hover{
 		transform: scale(1.03);
+		background: rgb(202, 212, 220);
+		border: 1px solid rgba(0, 0, 255, .1);
 	}
-	.submenu1 {
-	position: absolute;
-	top: 44px;
-	z-index: 5;
-	width: 240px;
-	visibility: hidden;
+
+	.submenu1  a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+
 	}
-	.submenu1 li {
-	position: relative;
-	border: 1px solid #999;
-	margin:2px;
-	}
-	.submenu1 a {
-	background: white;
-	color: #1c1c1c;
-	text-align: center;
-	font-size: 14px;
-	letter-spacing: 1px;
-	padding: 10px 20px;
-	}
-	.submenu1 .submenu1 {
-	position: absolute;
-	top: 20px;
-	left: 235px;
-	}
-	.menu-main li:hover > .submenu1 {
-	visibility: visible;
-	}
-	/*Карта дня*/
-	.nav{
-		text-align: left;
-	}
-	  .menu-cart{
-		margin-top: 20px;
-		max-width: 170px;
+	
+	.submenu1 li{
+		position: relative;
+		left: -35px;
+		max-width: 150px;
 		width: 100%;
-		height: 40px;
+		height: 30px;
 		color: #FFF;
 		font-weight: bold;
 		font-family: 'Roboto Condensed', Тahoma, sans-serif;
-		background: rgb(201, 249, 247);
+		/*background: rgb(225, 242, 249);*/
 		cursor: pointer;
-		border: 3px solid rgb(160, 240, 238);
-		border-radius: 7px;
+		text-align: center;
+		/*border-radius: 7px;
 		outline: 1px solid;
-		outline-color: rgb(160, 240, 238);
-		outline-offset: 0px;
+		outline-color: rgb(225, 242, 249);
+		outline-offset: 0px;*/
 		text-shadow: none;
 		transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1); 
-	  }
-	  .menu-cart:hover,
-	  .menu-cart:active,
-	  .menu-cart:focus {
-		box-shadow: inset 0 0 20px rgb(9, 176, 253);
+		transition: transform 0.45s;
+	}
+	.submenu1 li:hover{
+		box-shadow: inset 0 0 20px rgb(225, 242, 249);
 		outline-color: rgba(255, 255, 255, 0);
 		outline-offset: 15px;
 		color: #FFF;
-	  }
-  
-	  a{
-		text-decoration: none;
-		font-size: 12px;
-		text-align: center;
-		color: #000;
-		position: relative;
+		transform: scale(1.05);
+	}
+	/*Карта дня*/
 	
-	  }
-	  a::before {
-		content: '';
-		position: absolute;
-		left: 0; bottom: -5px;
-		width: 0;
-		height: 1.5px;
-		background-color: #000;
-	  }
-  
-	  a:hover:before {
-		width: 100%;
-	  }
-  
-	  a::before {
-		transition: width 0.35s;
-	  }
-  /*подсказки
-	  *[attr] {
-		position: relative;
-	  }
-  
-	  *[attr]:before {
-		pointer-events: none;
-		content: attr(attr);
-		position: absolute;
-		z-index: 1;
-		opacity: 0;
-		visibility: hidden;
-	  }
-  
-	  *[attr]:hover:before {
-		opacity: 1;
-		visibility: visible;
-	  }
-  
-	  *[attr]:before {
-		margin-top: 15px;
-		font-size: 10px;
-		color: #000;
-		border-radius: 7px;
-		background-color: #f1f1f1;
-		padding: 5px 10px;
-	  }
-  
-	  *[attr]:before, *[attr]:after {
-		width: 150px;
-		top: 100%;
-		left: 50%;
-		transition: all .15s ease;
-		transform: translate(-50%, 15px);
-	  }
-  
-	  *[attr]:hover:before, *[attr]:hover:after {
-		transition: all .15s ease;
-		transform: translate(-50%, 0);
-	  }
-  
-	  *[attr]:hover:after {
-		opacity: 1;
-		visibility: visible;
-	  }
-	  */
 	  /*текст контент*/
 	  .content{
 		height: 700px;
@@ -315,14 +209,58 @@ input:checked[type="checkbox"]{
 	  }
 	 
 	  /*Слайдер*/
-	  .slider img{
-		height: 600px;
-		width: 400px;
+	  .slider .img{
+		min-height: 700px;
+		max-width: 298px;
+		width: 100%;
 	  }
-	  .carousel-control-next,
-	  .carousel-control-prev{
-		margin-top: 550px;
-	  }
+	/**/
+
+	.karta{
+		max-width: 190px;
+		width: 100%;
+		min-height: 290px;
+		cursor: pointer;
+
+	}
+	.item-first{
+		margin-top:15px;
+		display: inline-block;
+		border: 1px solid lightgray;
+		text-align: center;
+		max-width: 200px;
+		min-height: 370px;
+		transition: transform 0.25s;
+	}
+	.item-first:hover{
+		transform: scale(1.05);
+	}
+	
+	.item-first .taro{
+		text-decoration: none;
+		color: black;
+		position: relative;
+		top: 20px;
+		font-size: 12px;
+		opacity: 0.5;
+	}
+	.item-first .span1{
+		position: relative;
+		top: 15px;
+		cursor: pointer;
+		opacity: 0.5;
+		color: #000;
+		
+	}
+	.span1:hover{
+		opacity: 1;
+	}
+	.taro:hover{
+		font-size: 16px;
+		transform: scale(1.05);
+		opacity: 1;
+
+	}
 
 	  /*Футер*/
 	  footer{
