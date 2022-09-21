@@ -1,11 +1,27 @@
 body{
 	margin: 0 auto;
-	color: rgba(255, 255, 255, 0.465);
+	color:#222;
+	background: #fff;
 }
-
 body.dark-theme{
+	color: #eee;
 	background: #000;
   }
+  body.dark-theme p{
+	color: #eee;
+  }
+  body.dark-theme svg{
+	color: #eee;
+  }
+  body.dark-theme a{
+	color: #eee;
+  }
+  body.dark-theme .dd-item:hover{
+	background: none;
+  }
+/*p.news_white{
+	color: #fff;
+}*/
 header{
 	width: 100%;
 	height:100px;
@@ -126,71 +142,76 @@ input:checked[type="checkbox"]{
 	padding-top: 100px;
  }
  .menu-main{
-	min-height: 700px;
 	height: 100vh;
-	background-color: aquamarine;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+
  }
  .slider{
 	min-height: 700px;
 	height: 100vh;
  }
  /*menu*/
- .topmenu{
-	
- }
-	ul li{
-		list-style-type: none !important;
+	.dd-item a{
+		text-decoration: none;
+		color: black; 
 	}
-	.btn{
-	position: relative;
-	left:-20px;
-	background: rgb(202, 212, 220);
-	padding: 10px 30px;
-	margin: 10px 0px;
-	max-width: 150px;
-	width: 100%;
-	font-size: 12px;
-	border-radius: 17px;
-	box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .1);
-	transition: transform 0.25s;
+	.dd-menu .dd-item{
+		display: none;
 	}
-	.btn:hover{
-		transform: scale(1.03);
-		background: rgb(202, 212, 220);
-		border: 1px solid rgba(0, 0, 255, .1);
-	}
-
-	.submenu1  a{
-    text-decoration: none;
-    color: black;
-	}
-	
-	.submenu1 li{
+	.dd-item{
 		position: relative;
-		right: 35px;
-		width: 150px;
+		right: 10px;
+		list-style-type: none;
 		width: 100%;
-		height: 30px;
-		color: #FFF;
+		height: 100%;
+		margin-top: 10px;
+	    font-size: 12px;
+	    cursor: pointer;
+	    text-align: center;
+	    transition: transform 0.45s;
+	}
+	.dd-item:hover{
+   transform: scale(1.05);
+   background:rgb(252, 252, 252);
+}
+	.btn{
+		width: 100%;
+		height: 40px ;
+		margin: 5px;
+		border: none;
+		border-bottom: 1px solid lightgray;
+		background: white;
 		font-weight: bold;
 		font-size: 12px;
-		cursor: pointer;
-		text-align: center;
-		text-shadow: none;
-		transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1); 
-		transition: transform 0.45s;
+		display: block;
+		transition: transform 0.25s;
 	}
-	.submenu1 li:hover{
-		box-shadow: inset 0 0 20px rgb(225, 242, 249);
-		outline-color: rgba(255, 255, 255, 0);
-		outline-offset: 15px;
-		color: #FFF;
-		transform: scale(1.05);
+	.btn:hover{
+		color: #000;
+        transform: scale(1.03);
+        background: rgb(255, 255, 255);}
+	/*новости*/
+	.news{
+		border: 1px solid lightgray;
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
 	}
-	/*Карта дня*/
+	.news1{
+		color: #000;
+		text-align: left;
+		font-size: 12px;
+		padding: 10px;
+		border-bottom: 1px solid lightgray;
+	}
+	.bi-google,
+	.bi-globe,
+	.bi-balloon-heart{
+		position: relative;
+		bottom: 7px;
+		color: #000;
+	}
 	
 	  /*текст контент*/
 	  .content{
@@ -282,21 +303,6 @@ input:checked[type="checkbox"]{
 	.main{
 		padding-top: 130px;
 	 }
-	 .submenu1{
-		max-width: 170px;
-		width:100%;
-	 }
-	 .submenu1 li{
-		width: 100%;
-		
-	 }
-	
-	.topmenu > li > button{
-		font-size: 13px;
-	}
-	.submenu1 a {
-		font-size:10px;
-	}
   }
   @media screen and (max-width: 575px){
 
@@ -307,17 +313,17 @@ input:checked[type="checkbox"]{
   }
   @media screen and (max-width: 886px){
 	.btn{
-		font-size: 10px;
+		font-size: 12px;
 		
 	}
-	.submenu1 li{
+	.dd-item{
 		font-size: 10px;
 		margin-bottom: 12px;
 	}
   }
   @media screen and (max-width: 740px){
 	.btn{
-		font-size: 8px;
+		font-size: 12px;
 		
 	}
   }
