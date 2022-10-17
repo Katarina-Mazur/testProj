@@ -322,7 +322,8 @@ input:checked[type="checkbox"]{
 	  }
 	  /*Настройки профиля*/
 	  .box-prof{
-		height: 1000px;
+		min-height: 1200px;
+		height: 100vh;
 	  }
 	  .settings{
 	  width: 100%;
@@ -366,8 +367,13 @@ input:checked[type="checkbox"]{
 		margin-top: 10px;
 		border-radius: 15px;
 		font-size: 14px;
+		transition: transform 0.25s;
 		
 	}
+	.btn-img:hover{
+		transform: scale(1.05);
+	}
+
 	.photo-prof{
 		border-radius: 50px;
 	}
@@ -397,6 +403,10 @@ input:checked[type="checkbox"]{
 		font-size: 14px;
 		margin-left: auto;
 		margin-top: 10px;
+		transition: transform 0.25s;
+	}
+	.save:hover{
+		transform: scale(1.05);
 	}
 	.saved{
 		height: 100px;
