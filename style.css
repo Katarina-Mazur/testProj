@@ -351,6 +351,7 @@ input:checked[type="checkbox"]{
 	 .text-span{
 		color: #636363;
 		font-size: 12px;
+		margin-left: 7px;
 	 }
 	 .profil{
 		padding: 20px;
@@ -411,6 +412,96 @@ input:checked[type="checkbox"]{
 	.saved{
 		height: 100px;
 	}
+	/*Вход*/
+	.reg-b{
+		background: #f0f0f0;
+	}
+	.reg{
+		display: flex;
+		flex-direction: column;
+		border: 1px solid rgb(121, 117, 117);
+		max-width: 450px;
+		width: 100%;
+		height: 550px;
+		margin:0 auto;
+		position: relative;
+		top:20px;
+		background: #fff;
+	}
+	b{
+		font-size: 24px;
+		margin: 20px 0 0 25px;
+	}
+	.reg-f{
+		color: #000;
+		margin: 25px;
+	}
+	label{
+		font-size: 18px;
+	}
+	.reg-btn{
+		width: 100%;
+		margin: 30px 0 20px 0;
+		height: 45px;
+		background: #79a9f0;
+	}
+	.reg-a{
+		text-decoration: none;
+		font-size: 14px;
+		color: #79a9f0;
+		margin-left: 7px;
+	}
+	.bi.bi-facebook, 
+	.bi.bi-android2, 
+	.bi.bi-apple, 
+	.bi.bi-google1,
+	.bi.bi-github{
+		color: #000;
+		margin: 35px 15px;
+		transition: transform 0.25s;
+	}
+	.bi.bi-facebook:hover, 
+	.bi.bi-android2:hover, 
+	.bi.bi-apple:hover, 
+	.bi.bi-google1:hover,
+	.bi.bi-github:hover{
+		transform: scale(1.05);
+
+	}
+	.reg-1{
+		max-width: 450px;
+		width: 100%;
+		height: 50px;
+		background: #fff;
+		border: 1px solid rgb(121, 117, 117);
+		position: relative;
+		top:15px;
+		bottom: 30px;
+		margin: 0 auto;
+		padding: 15px 25px;
+	}
+	.bi.bi-globe{
+		color: #000;
+		margin-top: 10px;
+	}
+	.reg-ul{
+		display: flex;
+		justify-content: center;
+		
+	}
+	.reg-ul li{
+		list-style-type: none;
+	}
+	.reg_a{
+		text-decoration: none;
+		font-size: 14px;
+		color: #717377;
+		margin-left: 7px;
+	}
+	.reg_a:hover{
+		color: #222;
+	}
+
 
 
 
