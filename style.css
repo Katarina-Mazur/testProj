@@ -420,6 +420,7 @@ input:checked[type="checkbox"]{
 		display: flex;
 		flex-direction: column;
 		border: 1px solid rgb(121, 117, 117);
+		border-radius: 10px;
 		max-width: 450px;
 		width: 100%;
 		height: 550px;
@@ -429,8 +430,9 @@ input:checked[type="checkbox"]{
 		background: #fff;
 	}
 	b{
-		font-size: 24px;
+		font-size: 27px;
 		margin: 20px 0 0 25px;
+		text-align: center;
 	}
 	.reg-f{
 		color: #000;
@@ -444,6 +446,10 @@ input:checked[type="checkbox"]{
 		margin: 30px 0 20px 0;
 		height: 45px;
 		background: #79a9f0;
+		border-radius: 10px;
+	}
+	.reg-btn:hover{
+		background: #89b2f0;
 	}
 	.reg-a{
 		text-decoration: none;
@@ -466,6 +472,7 @@ input:checked[type="checkbox"]{
 	.bi.bi-google1:hover,
 	.bi.bi-github:hover{
 		transform: scale(1.05);
+		color: rgb(55, 54, 54);
 
 	}
 	.reg-1{
@@ -474,6 +481,7 @@ input:checked[type="checkbox"]{
 		height: 50px;
 		background: #fff;
 		border: 1px solid rgb(121, 117, 117);
+		border-radius: 10px;
 		position: relative;
 		top:15px;
 		bottom: 30px;
@@ -510,6 +518,7 @@ input:checked[type="checkbox"]{
 		display: flex;
 		flex-direction: column;
 		border: 1px solid rgb(121, 117, 117);
+		border-radius: 10px;
 		max-width: 450px;
 		width: 100%;
 		height: 700px;
