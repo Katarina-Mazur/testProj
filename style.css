@@ -501,6 +501,23 @@ input:checked[type="checkbox"]{
 	.reg_a:hover{
 		color: #222;
 	}
+	.text-span1{
+		color: #636363;
+		font-size: 8px;
+		margin-left: 7px;
+	}
+	.registration{
+		display: flex;
+		flex-direction: column;
+		border: 1px solid rgb(121, 117, 117);
+		max-width: 450px;
+		width: 100%;
+		height: 700px;
+		margin:0 auto;
+		position: relative;
+		top:20px;
+		background: #fff;
+	}
 
 
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Вход</title>
+    <title>Регистрация пользователя</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="stylesheet" href="sbros.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -11,19 +11,26 @@
 	<link rel='stylesheet' href='style.css'>
 </head>
 <body class="reg-b">
-    <div class="reg">
-        <b>Вход</b>
+    <div class="registration">
+        <b>Регистрация</b>
         <form action="#" method="#" class="reg-f">
             <label>E-mail</label>
             <br>
-            <br>
             <input class="text-field__input" type="email" name="mail" id="mail" placeholder="E-mail">
             <br>  
-            <label>Пароль</label>
+            <label>Ваш номер телефона</label>
             <br>
+            <input class="text-field__input" type="phone" name="number" id="number" placeholder="your number">
+            <br>
+            <label>Введите пароль</label>
             <br>
             <input class="text-field__input" type="password" name="password" id="password" placeholder="password">
-            <button class="reg-btn">Войти</button>
+            <span class="text-span1">(пароль должен содержать 8 символов,не менее одной цыфры и заглавной буквы)</span>
+            <label>Повторите пароль</label>
+            <br>
+            <input class="text-field__input" type="password" name="password" id="password" placeholder="password">
+            
+            <button class="reg-btn">Зарегистрироваться</button>
             <a href="#" class="reg-a">Забыли пароль?</a><br>
             <span class="text-span">Или войдите с помощью других сервисов</span>
             <br>
@@ -53,10 +60,6 @@
         </form>
     </div>
     <br>
-    <div class="reg-1">
-          <span class="text-span">Ещё нет акаунта?</span>  
-          <a href="index3.html" class="reg-a">Зарегистрироваться?</a>
-    </div>
     <br>
         <ul class="reg-ul">
             <li><a href="#" class="reg_a"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
