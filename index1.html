@@ -19,9 +19,11 @@
                 <li><a href="#">Безопасность и конфиденциальность</a></li>
                 <li><a href="#">Уведомления</a></li>
                 <li><a href="#">Рекомендации</a></li>
+                <li><a href="#">Группы</a></li>
             </ul>
         </div>
     </header>
+    <form action="#" method="POST" class="reg-profile">
     <h3>Изображение профиля</h3>
     <div class="conteiner profil">
         <div class="row">
@@ -29,8 +31,11 @@
                 <img src="tpol.jpeg" class="photo-prof" width="100px" height="100px">
             </div>
             <div class="col-md-7">
-                <button class="btn-img">Обновить изображение профиля</button><br>
-                <span class="text-span">Поддерживаемые форматы: JPEG, PNG, GIF (рекомендуемое разрешение 1200х480; максимальный размер: 10МБ)</span>
+                <button class="btn-img">Обновить изображение профиля</button><button class="delit-img"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                  </svg></button><br>
+                <span class="text-span_img">Поддерживаемые форматы: JPEG, PNG, GIF (рекомендуемое разрешение 1200х480; максимальный размер: 10МБ)</span>
             </div>
         </div>
     </div>
@@ -40,20 +45,27 @@
     <div class="conteiner profil">
         <div class="row">
             <div class="col-md-2">
-                <span class="text-span"><strong>Имя пользователя</strong></span>
+                <span class="text-span_img"><strong>Имя пользователя:</strong></span>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-9">
                 <input class="text-field__input" type="text" name="name" id="name" placeholder="name" value="Ваше имя">
                 <span class="text-span">Вы можете обновить ваше имя пользователя.</span>
+            </div>
+            <div class="col-md-2">
+                <span class="text-span_img"><strong>Фамилия: </strong></span>
+            </div>
+            <div class="col-md-9">
+                <input class="text-field__input" type="text" name="name" id="name" placeholder="name" value="Ваша фамилия">
+                <span class="text-span">Вы можете обновить вашу фамилию пользователя.</span>
             </div>
         </div>
     </div>
     <div class="conteiner profil">
         <div class="row">
             <div class="col-md-2">
-                <span class="text-span"><strong>Отображаемое имя</strong></span>
+                <span class="text-span_img"><strong>Отображаемое имя:</strong></span>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-9">
                 <input class="text-field__input" type="text" name="name" id="name" placeholder="name" value="Ваше имя">
                 <span class="text-span">Проставьте прописные буквы в имени пользователя по своему желанию</span>
             </div>
@@ -62,10 +74,10 @@
     <div class="conteiner profil">
         <div class="row">
             <div class="col-md-2">
-                <span class="text-span"><strong>О себе</strong> </span>
+                <span class="text-span_img"><strong>О себе</strong> </span>
             </div>
-            <div class="col-md-7">
-                <input class="text-field__input" type="text" name="name" id="name" placeholder="infirmation" value="Ваша информация">
+            <div class="col-md-9">
+                <textarea class="text-field__input" type="text" name="name" id="name" placeholder="infirmation" value="Ваша информация"></textarea>
                 <span class="text-span">Текст для панели "Описание" на вашей странице должен содержать не более 300 символов.</span>
             </div>
         </div>
@@ -73,9 +85,9 @@
     <div class="conteiner profil">
         <div class="row">
             <div class="col-md-2">
-                <span class="text-span"><strong>Номер телефона</strong> </span>
+                <span class="text-span_img"><strong>Номер телефона</strong> </span>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-9">
                 <input class="text-field__input" type="text" name="number" id="number" placeholder="+380** *** ** **" value="+38093 333 33 33">
                 <span class="text-span">Введите ваш номер телефона</span>
             </div>
@@ -84,9 +96,9 @@
     <div class="conteiner profil">
         <div class="row">
             <div class="col-md-2">
-                <span class="text-span"><strong>E-mail</strong> </span>
+                <span class="text-span_img"><strong>E-mail</strong> </span>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-9">
                 <input class="text-field__input" type="text" name="mail" id="mail" placeholder="E-mail" value="mymail@gmail.com">
                 <span class="text-span">Введите адресс</span>
             </div>
@@ -97,6 +109,6 @@
             <button class="save">Сохранить изменения</button>
             </div>
             </div>
-
+</form>
 </body>
 </html>

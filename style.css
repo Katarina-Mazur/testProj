@@ -338,6 +338,8 @@ input:checked[type="checkbox"]{
 	  }
 	  .settings-ul{
 		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-around;
 		list-style-type: none;
 	  }
@@ -353,12 +355,15 @@ input:checked[type="checkbox"]{
 		font-size: 12px;
 		margin-left: 7px;
 	 }
+	 .text-span_img{
+		color: #636363;
+		font-size: 12px;
+	 }
 	 .profil{
 		padding: 20px;
 		border: 1px solid #222;
 		max-width: 900px;
 		width: 100%;
-		margin-left: 10px;
 		background: #f0eeee;
 	 }
 	 h3{
@@ -412,6 +417,14 @@ input:checked[type="checkbox"]{
 	.saved{
 		height: 100px;
 	}
+	textarea{
+		min-height: 150px;
+		height: 100%;
+	}
+	.delit-img{
+		border: none;
+		background: none;
+	}
 	/*Вход*/
 	.reg-b{
 		background: #f0f0f0;
@@ -421,9 +434,9 @@ input:checked[type="checkbox"]{
 		flex-direction: column;
 		border: 1px solid rgb(121, 117, 117);
 		border-radius: 10px;
-		max-width: 450px;
+		max-width: 400px;
 		width: 100%;
-		height: 550px;
+		height: 500px;
 		margin:0 auto;
 		position: relative;
 		top:20px;
@@ -436,7 +449,7 @@ input:checked[type="checkbox"]{
 	}
 	.reg-f{
 		color: #000;
-		margin: 25px;
+		margin: 15px;
 	}
 	label{
 		font-size: 18px;
@@ -453,7 +466,7 @@ input:checked[type="checkbox"]{
 	}
 	.reg-a{
 		text-decoration: none;
-		font-size: 14px;
+		font-size: 12px;
 		color: #79a9f0;
 		margin-left: 7px;
 	}
@@ -461,22 +474,24 @@ input:checked[type="checkbox"]{
 	.bi.bi-android2, 
 	.bi.bi-apple, 
 	.bi.bi-google1,
-	.bi.bi-github{
+	.bi.bi-github,
+	.bi.bi-trash{
 		color: #000;
-		margin: 35px 15px;
+		margin: 35px 16px;
 		transition: transform 0.25s;
 	}
 	.bi.bi-facebook:hover, 
 	.bi.bi-android2:hover, 
 	.bi.bi-apple:hover, 
 	.bi.bi-google1:hover,
-	.bi.bi-github:hover{
+	.bi.bi-github:hover,
+	.bi.bi-trash:hover{
 		transform: scale(1.05);
 		color: rgb(55, 54, 54);
 
 	}
 	.reg-1{
-		max-width: 450px;
+		max-width: 400px;
 		width: 100%;
 		height: 50px;
 		background: #fff;
@@ -487,6 +502,9 @@ input:checked[type="checkbox"]{
 		bottom: 30px;
 		margin: 0 auto;
 		padding: 15px 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.bi.bi-globe{
 		color: #000;
@@ -495,6 +513,9 @@ input:checked[type="checkbox"]{
 	.reg-ul{
 		display: flex;
 		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
 		
 	}
 	.reg-ul li{
@@ -502,7 +523,7 @@ input:checked[type="checkbox"]{
 	}
 	.reg_a{
 		text-decoration: none;
-		font-size: 14px;
+		font-size: 12px;
 		color: #717377;
 		margin-left: 7px;
 	}
@@ -519,16 +540,15 @@ input:checked[type="checkbox"]{
 		flex-direction: column;
 		border: 1px solid rgb(121, 117, 117);
 		border-radius: 10px;
-		max-width: 450px;
+		max-width: 400px;
 		width: 100%;
-		height: 700px;
+		min-height: 650px;
+		height: 100%;
 		margin:0 auto;
 		position: relative;
 		top:20px;
 		background: #fff;
 	}
-
-
 
 
 
@@ -568,6 +588,16 @@ input:checked[type="checkbox"]{
 	.btn{
 		font-size: 12px;
 		
+	}
+  }
+  @media screen and (max-width: 377px){
+	.settings{
+		height: 150px;
+	}
+  }
+  @media screen and (max-width: 391px){
+	.settings{
+		height: 170px;
 	}
   }
  
