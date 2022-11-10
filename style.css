@@ -556,8 +556,12 @@ input:checked[type="checkbox"]{
 
 
  @media screen and (max-width: 575px){
-	header{
-		height:130px
+	.home{
+		height:150px
+	}
+	.menu-main{
+		padding-top: 50px;
+		height: 300px;
 	}
 	.dropdown-menu_header{
 		top:10px;
