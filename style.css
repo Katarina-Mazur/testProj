@@ -75,7 +75,7 @@ svg{
 
 .dropdown-menu_header{
     position: relative;
-	left:38px;
+	left:40px;
 	top:30px;
 	width: 270px;
 	height: 400px;
@@ -192,7 +192,7 @@ input:checked[type="checkbox"]{
 	/*новости*/
 	.news{
 		border: 1px solid lightgray;
-		max-width: 450px;
+		max-width: 550px;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -209,6 +209,7 @@ input:checked[type="checkbox"]{
 	.bi-globe,
 	.bi-balloon-heart{
 		position: relative;
+		left: 225px;
 		bottom: 7px;
 		color: #000;
 	}
@@ -550,7 +551,68 @@ input:checked[type="checkbox"]{
 		background: #fff;
 	}
 
+/*Профиль страницы*/
+.title{
+	background-image: url(foto5.jpeg);
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+	width: 100%;
+	min-height: 250px;
+	height: 100%;
+	position: relative;
+	top:100px;
+}
+.title_img{
+	position: absolute;
+	top:145px;
+	left:30px;
+	border-radius: 45px;
+	border: 2px solid #717377;
+}
+h3{
+	margin: 120px 0 0 270px;
+	text-decoration: underline;
+}
+.title_info{
+	margin: 70px 30px 50px 30px;
+	font-family: 'Source Serif Pro', serif;
+	color: #222;
+}
+.interes{
+	margin-top: 30px;
+}
+.title_interes_ul .title_interes_li{
+	list-style-type: none;
+}
+.title_interes_li{
+	font-family: 'Source Serif Pro', serif;
+	font-size: 18px;
+	margin-right: 30px;
+	padding: 10px 25px;
+	border: 1px solid #e0e1e2;
+	background: #e0e1e2;
+	transition: transform 0.25s;
+}
+.title_interes_li:hover{
+	transform: scale(1.01);
+}
+.title_interes_a{
+	text-decoration: none;
+	color: #212529;
+	
+}
+.title_interes_a:hover{
+    color: #a5a7ac;
+}
+.bi-eye{
+	color: #212529;
+	transition: transform 0.25s; 
+}
+.bi-eye:hover{
+	transform: scale(1.05);
 
+}
 
 
 
