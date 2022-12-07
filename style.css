@@ -192,7 +192,7 @@ input:checked[type="checkbox"]{
 	/*новости*/
 	.news{
 		border: 1px solid lightgray;
-		max-width: 550px;
+		max-width: 575px;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -208,25 +208,26 @@ input:checked[type="checkbox"]{
 	.bi-google,
 	.bi-globe,
 	.bi-balloon-heart{
-		position: relative;
-		left: 225px;
-		bottom: 7px;
+		margin-bottom: 10px;
 		color: #000;
 	}
 	
 	  /*текст контент*/
 	  .content{
-		height: 700px;
+		min-height: 700px;
+		height: 100vh;
 		overflow: auto;
 	  }
 	  
 	 .content .text-info{
-		display: block;
 		font-size: 15px;
 		margin-top: 20px;
 		text-align: left;
-		color: #000;/*не применяется стиль, наследование соблюдено*/
 	  }
+	  .text-info {
+		--bs-text-opacity: 1;
+		color: rgba(6, 8, 9, 1)!important;
+		}
 	 /*Профиль
 	 .profile{
 		position: relative;
@@ -259,7 +260,7 @@ input:checked[type="checkbox"]{
 	 }*/
 	  /*Слайдер*/
 	   .img{
-		height: 700px;
+		height: 100vh;
 		max-width: 298px;
 		width: 100%;
 	  }
@@ -507,9 +508,8 @@ input:checked[type="checkbox"]{
 		justify-content: center;
 		align-items: center;
 	}
-	.bi.bi-globe{
+	.bi.bi-globe2{
 		color: #000;
-		margin-top: 10px;
 	}
 	.reg-ul{
 		display: flex;
