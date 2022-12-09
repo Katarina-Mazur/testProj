@@ -146,7 +146,7 @@ input:checked[type="checkbox"]{
 
  }
  .slider{
-	min-height: 700px;
+
 	height: 100vh;
  }
  /*menu*/
@@ -613,6 +613,83 @@ h3{
 	transform: scale(1.05);
 
 }
+/*Вид карты*/
+
+.appearance_img{
+	margin: 20px 0 0 20px;
+	transition: transform 0.25s; 
+}
+.appearance_img:hover{
+    transform: scale(1.05);
+}
+.appearance_h3{
+	position: relative;
+	bottom: 400px;
+	color: grey;
+}
+.appearance_p{
+	position: relative;
+	bottom: 350px;
+	left:270px;
+	font-size: 18px;
+	max-width: 550px;
+	width: 100%;
+}
+.appearance_p_abstract{
+	margin: 0 30px 0 60px;
+	position: relative;
+	bottom: 230px;
+	color: rgb(48, 48, 48);
+}
+.appearance_span_abstract{
+	margin-left: 60px;
+	position: relative;
+	bottom: 240px;
+	font-weight: bold;
+	color: grey;
+}
+/*//////*/
+
+ .decor {
+	position: relative;
+	bottom: 200px;
+	max-width: 700px;
+	margin-left: 10px;
+ }
+
+ .form-inner {
+	padding: 50px;
+ }
+ .form-inner input, .form-inner textarea {
+	display: block;
+	width: 100%;
+	padding: 0 20px;
+	margin-bottom: 10px;
+	background: #E9EFF6;
+	line-height: 40px;
+	border-width: 0;
+	border-radius: 20px;
+	font-family: 'Roboto', sans-serif;
+ }
+ .form-inner input[type="submit"] {
+	margin-top: 30px;
+	background: #4b4848;
+	border-bottom: 4px solid #221e1c;
+	color: white;
+	font-size: 14px;
+ }
+ .form-inner textarea {
+	resize: none;
+ }
+ .form_h2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	color: grey;
+	
+ }
+
+
 
 
 
