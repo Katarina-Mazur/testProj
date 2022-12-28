@@ -212,6 +212,41 @@ input:checked[type="checkbox"]{
 		color: #000;
 	}
 	
+	/*второй вариант новости*/
+	.news_div{
+		border: 1px solid lightgray;
+	}
+    .span_div{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		border-bottom:  1px solid lightgray;
+	}
+	.news_span_h1{
+		padding: 10px;
+		font-weight: bold;
+		font-style: italic;
+		font-size: 10px;
+		font-family: 'Roboto', sans-serif;
+		flex: 3;
+		
+	}
+	.news_span_data{
+        padding: 10px 10px 10px 20px;
+		font-size: 10px;
+		font-family: 'Roboto', sans-serif;
+		flex: 1;
+
+	}
+	.news_span_time {
+		padding: 10px 10px 10px 20px;
+		font-size: 10px;
+		font-family: 'Roboto', sans-serif;
+		flex: 1;
+	}
+	.
+
+	
 	  /*текст контент*/
 	  .content{
 		min-height: 700px;
