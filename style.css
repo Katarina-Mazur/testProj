@@ -5,10 +5,13 @@ body{
 }
 body.dark-theme{
 	color: #eee;
-	background: #000;
+	background: #222;
   }
   body.dark-theme p{
-	color: #eee;
+	color: #d1d1d1;
+  }
+  body.dark-theme p.text-info{
+	color: #d1d1d1;
   }
   body.dark-theme svg{
 	color: #eee;
@@ -25,16 +28,35 @@ body.dark-theme{
 .home{
 	width: 100%;
 	height:100px;
-	background: #000;
+	background:#222;
 	padding: 30px;
 	position: fixed;
 	z-index: 1;
 }
-.col-md-3{
-	color: #fff;
+.col-md-2{
+	color: #d1d1d1;
 }
 .col-md-6{
-	color: #fff;
+	color: #d1d1d1;
+}
+.col-md-1{
+	border: none;
+	background: none;
+	transition: transform 0.35s;
+	margin-bottom: 20px;
+}
+.col-md-1:hover{
+	transform: scale(1.1);
+}
+.premium_a{
+	color: #d1d1d1;
+	text-decoration: none;
+	transition: transform 0.35s;
+}
+.premium_a:hover{
+	transform: scale(1.1);
+	color:#d1d1d1;
+	cursor: pointer;
 }
 form .form{
 	max-width: 600px;
@@ -52,18 +74,18 @@ form .form:hover{
 	transform: scale(1.1);
 }
 svg{
-	color: #fff;
+	color:#d1d1d1;
 }
 .logo{
 	text-decoration: none;
-	color: #fff;
+	color: #d1d1d1;
 	font-size:17px;
 	transition: transform 0.35s;
 }
 .logo:hover{
 	transform: scale(1.1);
 	text-decoration: none;
-	color: #fff;
+	color: #d1d1d1;
  }
  .dropdown{
 	list-style-type: none;
@@ -81,8 +103,8 @@ svg{
 	height: 400px;
 	overflow: auto;
 	list-style-type: none;
-	color:#fff;
-	background: #000;
+	color:#d1d1d1;
+	background: #222;
 	text-align: left;
 	display: none;
 }
@@ -92,12 +114,12 @@ svg{
 }
 .dropdown ul li a{
 	text-decoration: none;
-	color:#fff;
+	color:#d1d1d1;
 	font-size:14px;
 	padding-bottom: 15px;
 }
 .dropdown ul li a:hover{
-	color:#fff;
+	color:#d1d1d1;
 	font-size: 15px;
 }
 .sub-menu_header{
@@ -254,45 +276,15 @@ input:checked[type="checkbox"]{
 		overflow: auto;
 	  }
 	  
-	 .content .text-info{
+	 .content .text-inform{
 		font-size: 15px;
 		margin-top: 20px;
 		text-align: left;
 	  }
-	  .text-info {
-		--bs-text-opacity: 1;
-		color: rgba(6, 8, 9, 1)!important;
-		}
-	 /*Профиль
-	 .profile{
-		position: relative;
-		top:20px;
-	 }
-	 .prof-inform{
-		position: relative;
-		top: 20px;
-	 }
-
-	 .profile1{
-		margin-top: 20px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	 }
-	 .photo{
-		border-radius: 50px;
-		margin: 20px;
-	 }
-	 .prof-name1{
-		text-align: right;
-		padding: 10px;
-		flex: 3
-	 }
-	 .prof-inform1{
-		padding-top: 20px;
-		text-align: left;
-	 }*/
+	  .text-inform {
+		
+		color: #222
+	}
 	  /*Слайдер*/
 	   .img{
 		height: 100vh;
@@ -355,7 +347,7 @@ input:checked[type="checkbox"]{
 	  /*Футер*/
 	  footer{
 		height: 100px;
-		background:#000;
+		background: #222;
 	  }
 	  /*Настройки профиля*/
 	  .box-prof{
@@ -466,14 +458,22 @@ input:checked[type="checkbox"]{
 	.reg-b{
 		background: #f0f0f0;
 	}
+	.input{
+		position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+	}
 	.reg{
 		display: flex;
 		flex-direction: column;
 		border: 1px solid rgb(121, 117, 117);
 		border-radius: 10px;
-		max-width: 400px;
+		max-width: 450px;
 		width: 100%;
-		height: 500px;
+		min-height: 550px;
+		height: 100%;
 		margin:0 auto;
 		position: relative;
 		top:20px;
@@ -528,7 +528,7 @@ input:checked[type="checkbox"]{
 
 	}
 	.reg-1{
-		max-width: 400px;
+		max-width: 450px;
 		width: 100%;
 		height: 50px;
 		background: #fff;
@@ -566,6 +566,10 @@ input:checked[type="checkbox"]{
 	.reg_a:hover{
 		color: #222;
 	}
+	.reg_footer{
+		width: 400px;
+		margin: 0 auto;
+	}
 	.text-span1{
 		color: #636363;
 		font-size: 8px;
@@ -576,7 +580,7 @@ input:checked[type="checkbox"]{
 		flex-direction: column;
 		border: 1px solid rgb(121, 117, 117);
 		border-radius: 10px;
-		max-width: 400px;
+		max-width: 450px;
 		width: 100%;
 		min-height: 650px;
 		height: 100%;
