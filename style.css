@@ -728,7 +728,58 @@ h3{
 	
  }
 
+/*Получить премиум*/
+.pemium_div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	max-width: 750px;
+	width: 100%;
+	min-height: 400px;
+	border: 1px solid grey;
+	border-radius: 15px;
+	background: #f8f8f8;
+	box-shadow: 10px 5px 5px rgb(112, 109, 109);
 
+}
+.premium_f{
+	max-width: 600px;
+	width: 100%;
+	margin-left: 150px;
+	margin-top: 20px;
+}
+.premium_input{
+    max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 7px;
+	height: 41px;
+}
+.premium_btn{
+	border-radius: 5px;
+	box-shadow: 10px 5px 5px rgb(112, 109, 109);
+	transition: transform 0.25s; 
+}
+.premium_btn:hover{
+	transform: scale(1.05);
+}
+.premium_a1{
+	text-decoration: none;
+	color: #222;
+	margin-top: 20px;
+	transition: transform 0.25s; 
+}
+.premium_a1:hover{
+	transform: scale(1.05);
+	color: #000;
+
+}
+.premium_p{
+	text-align: center;
+	font-size: 18px;
+}
 
 
 
