@@ -663,7 +663,6 @@ h3{
 
 }
 /*Вид карты*/
-
 .appearance_img{
 	margin: 20px 0 0 20px;
 	transition: transform 0.25s; 
@@ -672,28 +671,25 @@ h3{
     transform: scale(1.05);
 }
 .appearance_h3{
-	position: relative;
-	bottom: 400px;
 	color: grey;
+	margin: -250px  0 0 350px;
+
+
 }
 .appearance_p{
-	position: absolute;
-	bottom: 350px;
-	left:520px;
 	font-size: 18px;
 	max-width: 550px;
 	width: 100%;
+	margin: 20px 0 0 350px ;
 }
 .appearance_p_abstract{
-	margin: 0 30px 0 60px;
-	position: relative;
-	bottom: 30px;
+	margin: 100px 0 20px 60px;
 	color: rgb(48, 48, 48);
 }
 .appearance_span_abstract{
-	margin-left: 60px;
 	position: relative;
-	bottom: 40px;
+	top: 100px;
+	left: 60px;
 	font-weight: bold;
 	color: grey;
 }
