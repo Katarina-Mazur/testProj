@@ -16,7 +16,7 @@ let questions = [
       { option: "4", correct: false },
     ],
   }
-]
+];
 
 let currentIndex = 0;
 let questionsCorrect = 0;
@@ -44,7 +44,7 @@ function nextQuestion(e) {
 }
 
 function finish() {
-  textFinish.innerHTML = `você acertou ${questionsCorrect} de ${questions.length}`;
+  textFinish.innerHTML = `все верно ${questionsCorrect} de ${questions.length}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
