@@ -7,7 +7,7 @@ const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
 
 //import questions from "./question.json";
-/*let questions = [
+let questions = [
   {
     question: "Вопрос 1 + 2?",
     answers: [
@@ -16,10 +16,10 @@ const btnRestart = document.querySelector(".finish button");
       { option: "4", correct: false },
     ],
   }
-];*/
+];
 
-const readFile = fs.readFileSync(`question.json`, `utf8`);
-const parseData = JSON.parse(readFile);
+/*const readFile = fs.readFileSync(`question.json`, `utf8`);
+const parseData = JSON.parse(readFile);*/
 
 
 let currentIndex = 0;
@@ -48,7 +48,7 @@ function nextQuestion(e) {
 }
 
 function finish() {
-  textFinish.innerHTML = `верно ${questionsCorrect} de ${questions.length}`;
+  textFinish.innerHTML = `верно ${questionsCorrect} из ${questions.length}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
