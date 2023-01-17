@@ -17,7 +17,7 @@ const btnRestart = document.querySelector(".finish button");
     ],
   }
 ];*/
-questions = JSON.parse(questions);
+
 const readFile = fs.readFileSync(`question.json`, `utf8`);
 const parseData = JSON.parse(readFile);
 
