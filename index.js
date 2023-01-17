@@ -15,6 +15,14 @@ let questions = [
       { option: "2", correct: false },
       { option: "4", correct: false },
     ],
+  },
+  {
+    question: "Вопрос 1 + 2?",
+    answers: [
+      { option: "3", correct: true },
+      { option: "2", correct: false },
+      { option: "4", correct: false },
+    ],
   }
 ];
 
