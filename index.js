@@ -6,8 +6,8 @@ const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
 
-//import questions from "./questions.js";
-let questions = [
+//import questions from "./question.json";
+/*let questions = [
   {
     question: "Вопрос 1 + 2?",
     answers: [
@@ -16,7 +16,11 @@ let questions = [
       { option: "4", correct: false },
     ],
   }
-];
+];*/
+questions = JSON.parse(questions);
+const readFile = fs.readFileSync(`question.json`, `utf8`);
+const parseData = JSON.parse(readFile);
+
 
 let currentIndex = 0;
 let questionsCorrect = 0;
@@ -44,7 +48,7 @@ function nextQuestion(e) {
 }
 
 function finish() {
-  textFinish.innerHTML = `все верно ${questionsCorrect} de ${questions.length}`;
+  textFinish.innerHTML = `верно ${questionsCorrect} de ${questions.length}`;
   content.style.display = "none";
   contentFinish.style.display = "flex";
 }
